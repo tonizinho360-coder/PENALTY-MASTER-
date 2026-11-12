@@ -1,0 +1,19 @@
+{
+  "name": "penalty-fever-colyseus-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Serviço Colyseus paralelo para migração gradual do PENALTY FEVER",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check authority.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@colyseus/ws-transport": "0.16.5",
+    "colyseus": "0.16.5",
+    "express": "5.1.0"
+  }
+}
